@@ -1,8 +1,13 @@
-name: Deploy to GitHub Pages
+name: Deploy VitePress with Bun
 
 on:
   push:
-    branches: [ main ]
+    branches: [main] # 修改为你对应的分支名
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
 
 jobs:
   build-and-deploy:
@@ -11,18 +16,21 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Bun
-        uses: oven-sh/setup-bun@v1
+      - name: Install Bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
 
-      - name: Install dependencies
+      - name: Install Dependencies
         run: bun install
 
       - name: Build
-        run: bun run docs:build
+        run: bun run docs:build # 确保 package.json 中有此命令，通常是 vitepress build
+
+      - name: Upload Artifacts
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs/.vitepress/dist # 请根据你实际的输出目录修改
 
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        if: github.ref == 'refs/heads/main'
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: docs/.vitepress/dist
+        uses: actions/deploy-pages@v4

@@ -1,29 +1,55 @@
-name: CI
+name: VitePress CI
 
 on:
+  push:
+    branches: [main]
   pull_request:
-    branches: [ main ]
+    branches: [main] # 当 PR 指向 main 时触发
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
 
 jobs:
-  build:
+  build-and-test:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Bun
-        uses: oven-sh/setup-bun@v1
+      - name: Install Bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
 
-      - name: Install dependencies
+      - name: Install Dependencies
+        run: bun install
+
+      - name: Build
+        run: bun run docs:build # 执行构建，如果构建失败，CI 直接报错，PR 无法合并
+
+  deploy:
+    needs: build-and-test # 只有在 build-and-test 成功后才会执行
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        
+      - name: Install Bun
+        uses: oven-sh/setup-bun@v2
+        
+      - name: Install Dependencies
         run: bun install
 
       - name: Build
         run: bun run docs:build
 
-      - name: Check build output
-        run: |
-          if [ ! -d "docs/.vitepress/dist" ]; then
-            echo "Build failed: dist directory not found"
-            exit 1
-          fi
-          echo "Build successful"
+      - name: Upload Artifacts
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs/.vitepress/dist
+
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v4
