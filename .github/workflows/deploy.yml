@@ -25,12 +25,15 @@ jobs:
         run: bun install
 
       - name: Build
-        run: bun run docs:build # 确保 package.json 中有此命令，通常是 vitepress build
+        run: bun run docs:build
+
+      - name: Copy CNAME
+        run: cp CNAME docs/.vitepress/dist/CNAME
 
       - name: Upload Artifacts
         uses: actions/upload-pages-artifact@v3
         with:
-          path: docs/.vitepress/dist # 请根据你实际的输出目录修改
+          path: docs/.vitepress/dist
 
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
