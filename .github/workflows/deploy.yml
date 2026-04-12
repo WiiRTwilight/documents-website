@@ -27,9 +27,6 @@ jobs:
       - name: Build
         run: bun run docs:build
 
-      - name: Copy CNAME
-        run: cp CNAME docs/.vitepress/dist/CNAME
-
       - name: Upload Artifacts
         uses: actions/upload-pages-artifact@v3
         with:
