@@ -1,0 +1,11 @@
+# Technological contact
+Contact: mailto:lyy2182@disroot.org
+Encryption: https://keys.openpgp.org/vks/v1/by-fingerprint/25777192CE28EB7AADA04CE8DE236B36D6095E67
+
+# Administrative contact
+Contact: mailto:2637236284@qq.com
+
+Preferred-Languages: zh, en
+Canonical: https://docs.timeless-twilight.com/.well-known/security.txt
+
+Expires: 2027-12-31T23:59:59Z
