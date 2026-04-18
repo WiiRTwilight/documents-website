@@ -2,8 +2,8 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "WiiRTwilight Documents",
-  description: "WiiRTwilight Documents",
+  title: "Twilight's Documents",
+  description: "Twilight's Documents",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
@@ -12,9 +12,14 @@ export default defineConfig({
 
     sidebar: [
       {
-        text: 'Examples',
+        text: '关于此文档',
         items: [
           { text: 'Markdown Examples', link: '/markdown-examples' },
+          { text: '基本信息', link: '/about' },
+          { text: 'FreeBSD',
+            items: [
+              { text: '关于FreeBSD', link: '/freebsd/about-fbsd' },
+            ] },
         ]
       }
     ],
