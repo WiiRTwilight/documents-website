@@ -1,15 +1,29 @@
-# documents-website
+# 暮光的文档站
 
-To install dependencies:
+## 在本地运行该文档站
+
+建议安装nodejs
+
+安装bun:
+
+```bash
+npm install bun
+```
+
+安装依赖:
 
 ```bash
 bun install
 ```
 
-To run:
+构建:
 
 ```bash
-bun run index.ts
+bun run docs:build
 ```
 
-This project was created using `bun init` in bun v1.3.5. [Bun](https://bun.com) is a fast all-in-one JavaScript runtime.
+运行:
+
+```bash
+bun run docs:dev
+```
