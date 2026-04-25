@@ -2,13 +2,7 @@
 
 ## 在本地运行该文档站
 
-建议安装nodejs
-
-安装bun:
-
-```bash
-npm install bun
-```
+建议安装[bun](https://bun.com/)
 
 安装依赖:
 
