@@ -22,6 +22,13 @@
 
 你猜awa
 
+## 鸣谢
+
+- [百络图床](https://img.bloret.net): 文档图片托管 (不过文档文件里面也有一份用于留档)
+- [lyy2010](https://github.com/lyy2010): 文档站搭建
+- [HanSiqi2008](https://github.com/HanSiqi2008): 内容编写
+以及其他所有提交新内容的人。
+
 ## 贡献内容
 
 欢迎前往该托管仓库提交你的内容！[点此前往](https://github.com/WiiRTwilight/documents-website)
