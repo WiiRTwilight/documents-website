@@ -6,7 +6,6 @@ export default defineConfig({
   description: "Twilight's Documents",
   lang: 'zh-Hans',
   cleanUrls: true,
-  lastUpdated: true,
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
@@ -30,8 +29,7 @@ export default defineConfig({
     ],
     socialLinks: [
       { icon: 'github', link: 'https://github.com/WiiRTwilight/documents-website' }
-    ],
-    lastUpdatedText: '最后更新于',
+    ]
   },
   sitemap: {
     hostname: 'https://docs.timeless-twilight.com'
