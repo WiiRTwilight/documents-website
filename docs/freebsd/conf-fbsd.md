@@ -101,11 +101,11 @@ FreeBSD-kmods: {
 
 相信用过 Windows 的人都知道右键菜单一个东西叫做**以管理员身份运行**，这个也一样，允许你以管理员身份运行软件。
 
-下面以 su, sudo 和 doas 2个软件的安装和配置为例。(你隔着从0开数是吧)
+下面以 su, sudo 和 doas 3个软件的安装和配置为例。
 
 ### su
 
-相信各位都会用 su, 但我秉承着零信任的优良品德(~~神tm零信任~~), 决定再教一遍（
+相信各位都会用 su, 但我秉承着零信任的优良品德(~~神tm零信任~~), 决定再教一遍，防止有笨猫不会（
 
 `su`, 平平无奇的系统自带命令，用法为`su [用户名(可以省略)]`, 无用户名时理论上应该是登录 root 账号。
 
@@ -195,3 +195,31 @@ FreeBSD-kmods: {
 ### Minecraft (HMCL)
 
 Minecraft 本身并不官方支持 FreeBSD, 但好在 [LWJGL](https://www.lwjgl.org/) 官方提供了可用的 FreeBSD 版，这~~鬼~~平台上玩这~~鬼~~游戏的社区方案也比较多(吗)。这里以 [HMCL](https://hmcl.huangyuhui.net/) 为例讲解 Minecraft的安装和运行。
+
+#### Java 安装
+
+运行以下指令安装 Java:
+
+`sudo pkg ins openjdk8-jre openjdk21-jre openjdk25-jre`
+
+安装 Java 后，会弹出如下提示：
+
+![](https://img.bloret.net/img/1777337123108/4100ccb5eeed88254f8d854666a11279)
+
+输入指令 `sudo ee /etc/fstab`, 在最后一行的下一行(~~所以这到底是最后一行还是最后一行的下一行~~)添加内容 `proc /proc procfs rw 0 0`, ESC 退出并保存。
+
+#### 下载并运行 HMCL
+
+下载 HMCL 会吧，不会点[这里](https://ci.huangyuhui.net/job/HMCL-nightly/342/artifact/HMCL/build/libs/HMCL-3.14.0.342.sh)，你就发现你下载文件夹多了一个后缀名是 sh 的文件。
+
+右键这个 sh 文件，点击属性，如图打开运行权限：
+
+![](https://img.bloret.net/img/1777337123756/32a8e27542834b7571b44aadb62d8dc4)
+
+然后运行会吧，在 Download 文件夹(或许也可能是"下载"文件夹)右键该文件，选择"在Konsole(终端)中打开"，然后就开了，不准不会（
+
+![](https://img.bloret.net/img/1777337124649/ea493022336c191667addf21d10236ed)
+
+### 使用 Wine 运行 Windows 游戏
+
+我翻车了，不教（
