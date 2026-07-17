@@ -30,7 +30,7 @@ export default defineConfig({
               { text: '关于YSM', link: '/ysm/about-ysm' },
               { text: '兼容性', link: '/ysm/compat' },
               { text: 'FreesiaII', link: '/ysm/freesiaii' },
-            ]},
+            ] },
         ]
       }
     ],
