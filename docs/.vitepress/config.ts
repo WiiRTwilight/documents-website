@@ -16,14 +16,21 @@ export default defineConfig({
       {
         text: '关于此文档',
         items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
+          // { text: 'Markdown Examples', link: '/markdown-examples' },
           { text: '基本信息', link: '/about' },
+          { text: '友链', link: '/share-links' },
           { text: 'FreeBSD', link: '/freebsd/intro',
             items: [
               { text: '关于FreeBSD', link: '/freebsd/about-fbsd' },
               { text: '安装FreeBSD', link: '/freebsd/install-fbsd' },
               { text: '配置FreeBSD', link: '/freebsd/conf-fbsd' },
             ] },
+          { text: 'Yes Steve Model', link: '/ysm/intro',
+            items: [
+              { text: '关于YSM', link: '/ysm/about-ysm' },
+              { text: '兼容性', link: '/ysm/compat' },
+              { text: '在Velocity网络使用YSM', link: '/ysm/freesiaii' },
+            ]},
         ]
       }
     ],
