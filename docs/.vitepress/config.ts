@@ -29,7 +29,7 @@ export default defineConfig({
             items: [
               { text: '关于YSM', link: '/ysm/about-ysm' },
               { text: '兼容性', link: '/ysm/compat' },
-              { text: '在Velocity网络使用YSM', link: '/ysm/freesiaii' },
+              { text: 'FreesiaII', link: '/ysm/freesiaii' },
             ]},
         ]
       }
