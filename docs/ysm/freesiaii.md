@@ -10,11 +10,13 @@
 
 ## 安装并配置 FreesiaII
 
+首先，我们得从[这里](https://github.com/NguyenDevs/FreesiaII/releases)下载Freesia的Velocity端，Worker端和Backend端的jar文件。
+
 ### Velocity
 
 从[PaperMC网站](https://papermc.io/software/velocity)下载Velocity，并在[这里](https://modrinth.com/plugin/packetevents)下载PacketEvents。
 
-将构建获得的`Freesia-Velocity-x.x.x-YSM-x.x.x.jar`和下载获得的PacketEvents放进Velocity的`plugins`目录内。
+将获得的`Freesia-Velocity-x.x.x-YSM-x.x.x.jar`和下载获得的PacketEvents放进Velocity的`plugins`目录内。
 
 值得注意的是，PacketEvents插件对多数插件的兼容性都不是很好，比如与Ambassador冲突导致玩家无法进入服务器之类的问题。
 
@@ -24,11 +26,11 @@
 
 并在[这里](https://modrinth.com/mod/fabric-api/versions?g=1.21.1)下载Fabric API，和[这里](https://modrinth.com/mod/yes-steve-model)下载YSM的Fabric 1.21.1版模组。
 
-从你构建的目录获取`Freesia-Worker-x.x.x-YSM-x.x.x.jar`,然后将这三个模组放入`mods`文件夹内。
+从你的下载目录获取`Freesia-Worker-x.x.x-YSM-x.x.x.jar`,然后将这三个模组放入`mods`文件夹内。
 
 ### 后端 (Spigot,Paper)
 
-以Paper为例，在[这里](https://fill-ui.papermc.io/projects/paper)下载Paper服务端（需要高于或等于1.16的版本），并在你构建的目录获取`Freesia-Backend-x.x.x-YSM-x.x.x.jar`，放入`plugins`文件夹中。
+以Paper为例，在[这里](https://fill-ui.papermc.io/projects/paper)下载Paper服务端（需要高于或等于1.16的版本），并在你下载目录获取`Freesia-Backend-x.x.x-YSM-x.x.x.jar`，放入`plugins`文件夹中。
 
 ### 配置
 
