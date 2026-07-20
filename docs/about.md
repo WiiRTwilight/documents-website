@@ -27,7 +27,7 @@
 - [百络图床](https://img.bloret.net): 文档图片托管 (不过文档文件里面也有一份用于留档)
 - [lyy2010](https://github.com/lyy2010): 文档站搭建
 - [HanSiqi2008](https://github.com/HanSiqi2008): 内容编写
-以及其他所有提交新内容的人。
+- 以及其他所有提交新内容的人。
 
 ## 贡献内容
 
@@ -35,4 +35,4 @@
 
 ## 关于文档内容的分发协议
 
-？原来你们人类很在意这个的吗，那就按照CC BY-NC-SA协议来吧。
+？原来你们人类很在意这个的吗，那就按照[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode.en)协议来吧。
