@@ -14,7 +14,7 @@ hero:
       link: /about
     - theme: alt
       text: 开始阅读
-      link: /api-examples
+      link: /about
 
 features:
   - title: 不那么专业
