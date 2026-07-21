@@ -37,4 +37,4 @@
 
 ？原来你们人类很在意这个的吗，那文档内容就按照[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode.en)协议来吧。
 
-但至于其他素材，如主页上的暮光头像，著作权归红晨(一名QQ用户)所有，并由其授权该文档作者使用其图片作为文档主页标识。文档站使用的文档站框架[Vitepress](https://github.com/vuejs/vitepress/)遵循其原许可协议[MIT许可协议](https://github.com/vuejs/vitepress/blob/main/LICENSE)喵。
+但至于其他素材，如主页上的暮光头像~~(所以你最终还是回答了上文"关于主页的人物"这个问题是吧)~~，著作权归红晨(一名QQ用户)所有，并由其授权该文档作者使用其图片作为文档主页标识。文档站使用的文档站框架[Vitepress](https://github.com/vuejs/vitepress/)遵循其原许可协议[MIT许可协议](https://github.com/vuejs/vitepress/blob/main/LICENSE)喵。
