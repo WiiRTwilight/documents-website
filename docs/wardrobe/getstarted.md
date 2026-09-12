@@ -1,5 +1,9 @@
 # 旅途的开始
 
+::: warning
+我们不对任何因为正确遵守文档内容操作导致的意外负责。当然你不遵守文档内容操作出现的意外我们同样也不负责（
+:::
+
 ## 进入主页
 
 点击[此链接](https://wardrobe.timeless-twilight.com)或者在地址栏输入`https://wardrobe.timeless-twilight.com/`，以进入页面。
