@@ -38,10 +38,10 @@
 
 不出意外，你的服务器就配置好了。
 
-::: tips
+::: tip
 对于BungeeCord或者Velocity(None/Legacy Forward), 你需要给所有服务器都加上`-javaagent:authlib-injector-1.2.8.jar=https://wardrobe.timeless-twilight.com/api/yggdrasil`, 并且确认BungeeCord/Velocity开启了正版验证，而所有下游服务端关闭了正版验证并关闭了公钥检查。
 :::
 
-::: tips
+::: tip
 对于Velocity(Modern Forward), 你需要给所有服务器都加上`-javaagent:authlib-injector-1.2.8.jar=https://wardrobe.timeless-twilight.com/api/yggdrasil`, 并且确认Velocity开启了正版验证，而所有下游服务端关闭了`server.properties`的正版验证并关闭了公钥检查。以及在`config/paper-global.yaml`打开`online-mode`。
 :::
