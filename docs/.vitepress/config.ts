@@ -31,6 +31,13 @@ export default defineConfig({
               { text: '兼容性', link: '/ysm/compat' },
               { text: 'FreesiaII', link: '/ysm/freesiaii' },
             ] },
+          { text: '暮光的衣橱', link: '/wardrobe/intro',
+            items: [
+              { text: '关于衣橱', link: '/wardrobe/about-wardrobe' },
+              { text: '旅途的开始', link: '/wardrobe/getstarted' },
+              { text: '游戏侧配置', link: '/wardrobe/game-conf' },
+              { text: '服务端侧配置', link: '/wardrobe/server-conf' },
+            ] },
         ]
       }
     ],
