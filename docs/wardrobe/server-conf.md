@@ -6,7 +6,7 @@
 
 这种一般是对应大部分未使用外置登陆的MC服务器，有些猫猫狐狐希望加载"暮光的衣橱"的皮肤，但是不希望服务器使用"暮光的衣橱"的外置验证系统，则归类为这种情况。
 
-### TwilightWardrobePlugins(修改版LittleSkin)
+### TwilightWardrobePlugin(修改版LittleSkinPlugin)
 
 这个插件原本是LittleSkin开发的离线服显示LittleSkin皮肤的方案，我给这玩意稍微改了下(~~其实只改了两个网络链接~~)，现在这个插件可以在离线服显示Twilight's Wardrobe的皮肤了。
 
